@@ -10,6 +10,7 @@ const app = express();
 const port = 8000;
 
 const codespaceName = process.env.CODESPACE_NAME;
+// Codespaces API URL: https://$CODESPACE_NAME-8000.app.github.dev
 const baseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
   : `http://localhost:${port}`;
